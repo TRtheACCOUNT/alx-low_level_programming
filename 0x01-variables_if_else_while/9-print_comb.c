@@ -3,8 +3,8 @@
  */
 #include <stdio.h>
 /**
- * main Print all possible combinations of single-digit numbers.
- * return 0
+ * main - Print all possible combinations of single-digit numbers.
+ * Return: 0
  */
 int main(void)
 {
