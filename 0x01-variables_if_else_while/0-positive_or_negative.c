@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/* betty style  */
+/**
+ * return a random number and states whether
+ * it is positive, negative, or zero.
+*/
 int main(void)
 {
 	int n;
@@ -20,4 +22,3 @@ int main(void)
     }
 	return (0);
 }
-
