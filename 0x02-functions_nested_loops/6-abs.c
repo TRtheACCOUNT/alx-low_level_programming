@@ -9,10 +9,10 @@ int int_abs(int c)
 {
 	if (c < 0)
 	{
-	int abs_val;
+	int val;
 
-	abs_val = c * -1;
-	return (abs_val);
+	val = c * -1;
+	return (val);
 	}
 	return (c);
 }
