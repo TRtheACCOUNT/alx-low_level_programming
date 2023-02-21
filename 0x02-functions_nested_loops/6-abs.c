@@ -2,17 +2,20 @@
 
 /**
  * int_abs - Gives the absolute value of a number .
- * @int: input
+ * @c: input
  * Return: return the absolute value of the input .
  */
-int int_abs(int)
+int int_abs(int c)
 {
-	if (int >= 0)
+	if (c >= 0)
 	{
-		return (int);
+		return (c);
 	}
-	else if (int < 0)
+	else if (c < 0)
 	{
-		return (int * (-1));
+		int abs;
+
+		abs = c * -1;
+		return (abs);
 	}
 }

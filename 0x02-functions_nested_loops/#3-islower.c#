@@ -6,10 +6,9 @@
  * @c: letter
  */
 int _islower(int c)
-{
 	if (c >= "a" && c <= "z")
 		{Return 1}
-	else
+        else
 		{Return 0}
 	_putchar('\n');
 }

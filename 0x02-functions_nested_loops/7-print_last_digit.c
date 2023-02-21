@@ -2,11 +2,11 @@
 
 /**
  * print_last_digit - Gives the last digit of a number .
- * @int: input
+ * @c: input
  * Return: return the last digite of a number .
  */
-int print_last_digit(int)
+int print_last_digit(int c)
 {
-	last = int % 10
+	last = c % 10
 	return (last)
 }
