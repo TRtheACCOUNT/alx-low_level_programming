@@ -7,15 +7,5 @@
  */
 int int_abs(int c)
 {
-	if (c >= 0)
-	{
-		return (c);
-	}
-	else if (c < 0)
-	{
-		int abs;
-
-		abs = c * -1;
-		return (abs);
-	}
+	return (ab * ((ab > 0) - (ab < 0)));
 }
