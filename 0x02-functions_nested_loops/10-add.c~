@@ -1,0 +1,12 @@
+#include "main.h"
+
+/**
+ * add - Gives the sum of two numbers .
+ * @x,@y: two numbers .
+ * Return: return the sum .
+ */
+int add(int x, int y)
+{
+	sum = x + y;
+	return (sum);
+}
