@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*_strcpy - copy and store a string.
+* _strcpy -copy and store a string.
 * @src: string input.
 * @dest: the destination of the string .
-* Return : evrey half a string.
+* Return:evrey half a string.
 */
 char *_strcpy(char *dest, char *src)
 {

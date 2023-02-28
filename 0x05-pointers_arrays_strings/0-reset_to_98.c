@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
 * reset_to_98 - print the value of n.
 * @n: input.
 * Return: n.

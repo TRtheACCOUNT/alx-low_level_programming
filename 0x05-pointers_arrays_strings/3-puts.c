@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
 * _puts - print the string .
 * @str: string input.
 * Return : the string
