@@ -5,13 +5,14 @@
 * @str: string input.
 * Return : the string
 */
+
 void _puts(char *str)
 {
-	int len;
+	int index;
 
-	for (len = 0; str[len] != '\0'; len++)
+	for (index = 0; str[index] != '\0'; index++)
 	{
-		_putchar(str[len]);
+		_putchar(str[index]);
 	}
 	_putchar('\n');
 }
