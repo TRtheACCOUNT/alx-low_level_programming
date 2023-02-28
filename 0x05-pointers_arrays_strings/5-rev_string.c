@@ -5,26 +5,16 @@
 * @s: The string to be modified
 *Return: void
 */
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int a, len;
-
-	char *begin, *end = s;
-
-	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
+	int c = 0;
+	while (s[c] != '\0')
 	{
-		end++;
+	c++;
 	}
-	len = a + 1;
-	begin = s;
-	for (a = 0; a < len / 2; a++)
+	for (c -= 1; c >= 0; c--)
 	{
-		char x;
-		x = *end;
-		*end = *begin;
-		*begin = x;
-		begin++;
-		end--;
+	_putchar(s[c]);
 	}
-	end[len + 1] = '\0';
+	_putchar('\n');
 }
