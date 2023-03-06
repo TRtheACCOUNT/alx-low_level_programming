@@ -1,33 +1,24 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * _strspn - counts the number of bytes of a string
+ * _strpbrk - Entry point
  * @s: string
  * @accept: string
- * Return: 0
+ * Return: 0 
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, n, j, l;
-
-	j = 0;
+	int i, n;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		l = 0;
-
 		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (accept[n] == s[i])
-			{
-				j++;
-				l = 1;
-			}
+			if (s[i] == accept[n])
+				return (s + i);
 		}
-
-		if (l == 0)
-			return (j);
 	}
 
-	return (j);
+	return (NULL);
 }
