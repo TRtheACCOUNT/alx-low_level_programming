@@ -5,7 +5,7 @@
  * _strpbrk - Entry point
  * @s: string
  * @accept: string
- * Return: 0 
+ * Return: 0
  */
 char *_strpbrk(char *s, char *accept)
 {
