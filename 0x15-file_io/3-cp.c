@@ -3,19 +3,19 @@
 
 /**
  * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
+ * @src: file_from.
+ * @dest: file_to.
  * @argv: arguments vector.
  * Return: no return.
  */
-void error_file(int file_from, int file_to, char *argv[])
+void error_file(int src, int dst, char *argv[])
 {
-	if (file_from == -1)
+	if (src == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (file_to == -1)
+	if (dst == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	src = open(argv[1], O_RDONLY);
 	dst = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	err(file_from, file_to, argv);
+	error_file(file_from, file_to, argv);
 
 	nchars = 1024;
 	while (nchars == 1024)
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 			error_file(-1, 0, argv);
 		nwr = write(dst, buf, nchars);
 		if (nwr == -1)
-			err(0, -1, argv);
+			error_file(0, -1, argv);
 	}
 
 	err = close(src);
