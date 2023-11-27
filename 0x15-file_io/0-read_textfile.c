@@ -5,11 +5,10 @@
  * read_textfile- Read text file and print .
  * @filename: text file name
  * @letters: number of letters to be read
- * Return: w or 
+ * Return: w or -1
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	
 	ssize_t txt, wrt, rd;
 char *num;
 
